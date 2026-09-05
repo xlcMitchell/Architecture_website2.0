@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David - Independent Architectural Designer. Designing residential homes focused on light, space, privacy, and how spaces feel to live in.">
+    <title>David | Architectural Designer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&family=Caveat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="brand-name">DAVID</span>
+                <span class="brand-title">Architectural Designer</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="nav-link">About David</a></li>
+                    <li><a href="#feelings" class="nav-link">Philosophy</a></li>
+                    <li><a href="#stories" class="nav-link">Projects</a></li>
+                    <li><a href="#builders" class="nav-link">Builders</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / ABOUT DAVID -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-text-col">
+                    <span class="annotation-text">✎ 25+ years drawing, listening, and building</span>
+                    <h1 class="hero-title">I'm David.</h1>
+                    <p class="hero-lead">I’ve been designing residential homes for over 25 years. What I enjoy most isn't simply drawing a house on paper it's figuring out how that house can make someone’s everyday life genuine, comfortable, and easy.</p>
+                    <p class="hero-subtext">I work directly with homeowners and builders from first sketch to final site walk. No middle managers or junior hand-offs just direct, straightforward architectural design.</p>
+                </div>
+                
+                <div class="hero-portrait-col">
+                    <div class="portrait-container">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80&sat=-100" alt="David working at his drafting table" class="portrait-img">
+                        <span class="handwritten-caption">David at the drafting table working through new ideas.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 01: PHILOSOPHY & EXPERIENCE -->
+        <section id="feelings" class="section-padding bg-alt">
+            <div class="container grid-editorial">
+                <div class="editorial-meta">
+                    <span class="section-num">01</span>
+                    <span class="section-tag">PHILOSOPHY & EXPERIENCE</span>
+                </div>
+                <div class="editorial-body">
+                    <h2 class="editorial-heading">What does a good home feel like?</h2>
+                    <p class="lead-text">Most people don't start thinking about a building through council requirements or roof trusses. They start with a feeling: morning sun on the kitchen table, a quiet corner to read, or a space where the kids can run around while you cook without feeling on top of each other.</p>
+
+                    <div class="feeling-tabs-layout">
+                        <!-- Selector - sticky and multi-line/wrapping on mobile -->
+                        <div class="feeling-selector" role="tablist" aria-label="Core Qualities of a Home" id="feelingSelector">
+                            <button class="feeling-btn active" role="tab" aria-selected="true" data-feeling="light">Light</button>
+                            <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="space">Space</button>
+                            <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="privacy">Privacy</button>
+                            <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="warmth">Warmth</button>
+                            <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="connection">Connection</button>
+                        </div>
+
+                        <!-- Content Stage - Flow fix applied in CSS -->
+                        <div class="feeling-display-stage" id="feelingStage">
+                            <div class="feeling-card active" id="feeling-light" role="tabpanel">
+                                <div class="stage-drawing">
+                                    <svg viewBox="0 0 600 400" class="arch-svg">
+                                        <rect width="600" height="400" fill="#FFFFFF"/>
+                                        <g stroke="#1C1C1C" stroke-width="1.5" fill="none">
+                                            <polygon points="100,320 100,180 300,80 500,180 500,320"/>
+                                            <line x1="80" y1="320" x2="520" y2="320" stroke-width="2"/>
+                                            <line x1="300" y1="40" x2="220" y2="200" stroke-dasharray="3,3"/>
+                                            <line x1="330" y1="40" x2="380" y2="240" stroke-dasharray="3,3"/>
+                                            <rect x="220" y="190" width="160" height="130" fill="#FAF9F6"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="stage-text">
+                                    <p class="feeling-quote">"I love seeing people enjoy a home because we got the sunlight right."</p>
+                                    <p class="feeling-body">It’s about tracking where the morning light hits when you wake up, and making sure the main living areas catch natural warmth during cold winter afternoons.</p>
+                                </div>
+                            </div>
+
+                            <div class="feeling-card" id="feeling-space" role="tabpanel">
+                                <div class="stage-drawing">
+                                    <svg viewBox="0 0 600 400" class="arch-svg">
+                                        <rect width="600" height="400" fill="#FFFFFF"/>
+                                        <g stroke="#1C1C1C" stroke-width="1.5" fill="none">
+                                            <rect x="120" y="100" width="360" height="220"/>
+                                            <line x1="120" y1="210" x2="480" y2="210" stroke-dasharray="4,4"/>
+                                            <line x1="300" y1="100" x2="300" y2="320" stroke-dasharray="4,4"/>
+                                            <circle cx="300" cy="210" r="60"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="stage-text">
+                                    <p class="feeling-quote">"Generous space isn't about huge floor plans. It's about room to breathe."</p>
+                                    <p class="feeling-body">Good proportion and sightlines can make a modest home feel wide open, without adding unneeded building costs or empty hall space.</p>
+                                </div>
+                            </div>
+
+                            <div class="feeling-card" id="feeling-privacy" role="tabpanel">
+                                <div class="stage-drawing">
+                                    <svg viewBox="0 0 600 400" class="arch-svg">
+                                        <rect width="600" height="400" fill="#FFFFFF"/>
+                                        <g stroke="#1C1C1C" stroke-width="1.5" fill="none">
+                                            <line x1="100" y1="320" x2="500" y2="320" stroke-width="2"/>
+                                            <polygon points="160,320 160,160 380,160 380,320"/>
+                                            <path d="M 120,320 Q 200,220 280,320" stroke-dasharray="3,3"/>
+                                            <rect x="400" y="200" width="60" height="120"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="stage-text">
+                                    <p class="feeling-quote">"How can a house feel completely open to nature without feeling exposed to neighbours?"</p>
+                                    <p class="feeling-body">Privacy is about positioning windows, courtyards, and entryways so you feel comfortable keeping the blinds open all day.</p>
+                                </div>
+                            </div>
+
+                            <div class="feeling-card" id="feeling-warmth" role="tabpanel">
+                                <div class="stage-drawing">
+                                    <svg viewBox="0 0 600 400" class="arch-svg">
+                                        <rect width="600" height="400" fill="#FFFFFF"/>
+                                        <g stroke="#1C1C1C" stroke-width="1.5" fill="none">
+                                            <rect x="180" y="140" width="240" height="180"/>
+                                            <line x1="180" y1="320" x2="420" y2="320" stroke-width="2"/>
+                                            <path d="M 260,260 Q 300,220 340,260 Q 300,300 260,260"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="stage-text">
+                                    <p class="feeling-quote">"True warmth is timber underfoot, good insulation, and physical ease."</p>
+                                    <p class="feeling-body">A warm home is draft-free, quiet, easy to heat, and stays pleasant through changing seasons.</p>
+                                </div>
+                            </div>
+
+                            <div class="feeling-card" id="feeling-connection" role="tabpanel">
+                                <div class="stage-drawing">
+                                    <svg viewBox="0 0 600 400" class="arch-svg">
+                                        <rect width="600" height="400" fill="#FFFFFF"/>
+                                        <g stroke="#1C1C1C" stroke-width="1.5" fill="none">
+                                            <circle cx="230" cy="200" r="90"/>
+                                            <circle cx="370" cy="200" r="90"/>
+                                            <line x1="230" y1="200" x2="370" y2="200" stroke-dasharray="2,2"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="stage-text">
+                                    <p class="feeling-quote">"I think about how people are actually going to use the space together."</p>
+                                    <p class="feeling-body">Connecting living areas to the outdoor yard, or giving family members their own quiet nooks while staying within earshot.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 02: IN DAVID'S WORDS -->
+        <section id="video-intro" class="section-padding">
+            <div class="container grid-editorial">
+                <div class="editorial-meta">
+                    <span class="section-num">02</span>
+                    <span class="section-tag">IN DAVID'S WORDS</span>
+                </div>
+                <div class="editorial-body">
+                    <h2 class="editorial-heading">"Why does a drawing work on site?"</h2>
+                    <p class="lead-text">I believe in drawings that make complete sense when you're standing on a windy building site holding a set of plans.</p>
+                    
+                    <div class="video-placeholder-container">
+                        <div class="video-mockup">
+                            <div class="video-play-btn" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="48" height="48" fill="#FFFFFF">
+                                    <polygon points="5,3 19,12 5,21"/>
+                                </svg>
+                            </div>
+                            <p class="video-label">Short Video Placeholder (30–60s)</p>
+                            <span class="video-sublabel">David talking through a residential floor plan design</span>
+                        </div>
+                    </div>
+                    <span class="handwritten-note text-center">✎ Future video clip: David explaining a real site layout in simple terms.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03: PROJECT PORTFOLIO -->
+        <section id="stories" class="section-padding bg-alt">
+            <div class="container grid-editorial">
+                <div class="editorial-meta">
+                    <span class="section-num">03</span>
+                    <span class="section-tag">PROJECT PORTFOLIO</span>
+                </div>
+                <div class="editorial-body">
+                    <h2 class="editorial-heading">Real homes built for real living.</h2>
+                    <p class="lead-text">Below is a space for selected residential projects. Once client photography and site documentation are finalized, actual project drawings and finished house photos will be displayed here.</p>
+
+                    <div class="projects-placeholder-grid">
+                        <div class="project-placeholder-card">
+                            <div class="placeholder-media-box">
+                                <span class="placeholder-tag">ARCHITECTURAL DRAWING + PHOTO PLACEHOLDER</span>
+                                <span class="placeholder-icon">📐</span>
+                            </div>
+                            <div class="placeholder-details">
+                                <span class="project-num-tag">PROJECT 01</span>
+                                <h3 class="placeholder-title">Residential Home Project</h3>
+                                <p class="placeholder-text">Project documentation and photographs coming soon. Content will feature David's original elevation drawings and final client photography.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-placeholder-card">
+                            <div class="placeholder-media-box">
+                                <span class="placeholder-tag">ARCHITECTURAL DRAWING + PHOTO PLACEHOLDER</span>
+                                <span class="placeholder-icon">📐</span>
+                            </div>
+                            <div class="placeholder-details">
+                                <span class="project-num-tag">PROJECT 02</span>
+                                <h3 class="placeholder-title">Residential Alteration & Courtyard</h3>
+                                <p class="placeholder-text">Project information coming soon. Will showcase floorplan adjustments focused on sun angles, privacy, and indoor-outdoor flow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04: PRACTICAL BUILDABILITY -->
+        <section id="builders" class="section-padding">
+            <div class="container grid-editorial">
+                <div class="editorial-meta">
+                    <span class="section-num">04</span>
+                    <span class="section-tag">PRACTICAL BUILDABILITY</span>
+                </div>
+                <div class="editorial-body">
+                    <h2 class="editorial-heading">Speaking the builder's language.</h2>
+                    <p class="lead-text">A great design is only as good as its execution on site. Having spent decades working alongside local trades, my technical working drawings are written for clarity, accuracy, and efficiency.</p>
+                    <p>I aim to provide working drawings that are clear, practical, and accurate. Catching structural questions early on paper saves expensive delays on site later. Builders appreciate straightforward documentation, and homeowners benefit from a smooth build.</p>
+                    
+                    <div class="builder-quote-box">
+                        <p class="builder-quote">"Good drawings aren't about being overly complex. They're about making sure everyone on site knows exactly what we're building and why."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 05: CONTACT -->
+        <section id="contact" class="section-padding bg-dark text-light">
+            <div class="container grid-editorial">
+                <div class="editorial-meta">
+                    <span class="section-num light-text">05</span>
+                    <span class="section-tag light-text">GET IN TOUCH</span>
+                </div>
+                <div class="editorial-body">
+                    <h2 class="editorial-heading light-text">Thinking about building or renovating?</h2>
+                    <p class="lead-text light-sub">Whether you have a site picked out, early ideas scribbled down on a napkin, or need a second set of eyes on a residential site layout, I’m always happy to have a straightforward chat.</p>
+
+                    <div class="direct-contact-box">
+                        <div class="contact-channel">
+                            <span class="channel-label">Direct Phone</span>
+                            <a href="tel:+64210000000" class="phone-link">+64 (0)21 000 0000</a>
+                        </div>
+                        <div class="contact-channel">
+                            <span class="channel-label">Service Area</span>
+                            <span class="channel-val">New Zealand Residential Design</span>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="minimal-dark-form">
+                        <div class="form-field">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" required placeholder="e.g. Sarah & Mark">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" required placeholder="021 123 4567">
+                            </div>
+                            <div class="form-field">
+                                <label for="location">Site Location / Suburb</label>
+                                <input type="text" id="location" placeholder="e.g. Palmerston North">
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Tell me a little about what you're thinking *</label>
+                            <textarea id="message" rows="4" required placeholder="New build, extension, or early ideas..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-dark-submit">Send Message Direct to David</button>
+                        <div id="form-status" class="form-status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-left">
+                <span class="footer-brand">DAVID</span>
+                <span class="footer-desc">Independent Architectural Designer &bull; 25+ Years Experience</span>
+            </div>
+            <div class="footer-right">
+                <a href="#hero" class="back-top-link">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
