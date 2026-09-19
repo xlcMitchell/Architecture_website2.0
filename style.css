@@ -256,7 +256,7 @@ p {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 4rem;
     align-items: center;
 }
@@ -293,12 +293,13 @@ p {
 
 .portrait-img {
     width: 100%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
     display: block;
     filter: grayscale(100%);
     transition: filter 0.4s ease;
 }
-
 .portrait-container:hover .portrait-img {
     filter: grayscale(20%);
 }
