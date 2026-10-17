@@ -43,74 +43,113 @@
         </div>
     </section>
 
-    <!-- SECTION 01: DESIGNS -->
-    <section id="designs" class="section-padding bg-alt">
-        <div class="container grid-editorial">
-            <div class="editorial-meta"><span class="section-num">01</span><span class="section-tag">DESIGNS</span></div>
-            <div class="editorial-body">
-                <h2 class="editorial-heading">What does a good home feel like?</h2>
-                <p class="lead-text">I’ve had the privilege of working with some prominent New Zealand architects in Auckland. One thing I noticed, time and time again, was a simplicity within their work — even when the architecture itself was beautifully sophisticated. There was a balance to it. Everything seemed to influence everything else, and somehow all those individual decisions came together to create a sense of harmony.</p>
-                <p>I really appreciated those years of drawing their designs and being involved in turning ideas and developing them into drawings and seeing the actual buildings. I was learning by being part of the process — seeing how a drawing, a detail or a material became something real.</p>
-                <p>Over the years, working on my own projects, I’ve become much more conscious of the balance I’m trying to create for my clients.</p>
-                <p>I think about light, space and the way spaces connect with one another. I think about the aesthetics and the tactile quality of materials, as well as the character of the site and its surrounding landscape. None of these things exist in isolation.</p>
-                <p>When they work together, they create something more than a collection of rooms or a beautiful object. They create a feeling. And that feeling is something the people who live in the home get to experience every day.</p>
-                <div class="feeling-tabs-layout">
-                    <div class="feeling-selector" role="tablist" aria-label="Design qualities" id="feelingSelector">
-                        <button class="feeling-btn active" role="tab" aria-selected="true" data-feeling="light">Light</button>
-                        <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="space">Space</button>
-                        <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="site">Site</button>
-                        <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="aesthetics">Aesthetics</button>
-                        <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="budget">Budget</button>
-                    </div>
-                    <div class="feeling-display-stage" id="feelingStage">
-                        <div class="feeling-card active" id="feeling-light" role="tabpanel">
-                            <div class="stage-drawing"><svg viewBox="0 0 600 400" class="arch-svg" aria-hidden="true"><rect width="600" height="400" fill="#FFFFFF"/><g stroke="#1C1C1C" stroke-width="1.5" fill="none"><polygon points="100,320 100,180 300,80 500,180 500,320"/><line x1="80" y1="320" x2="520" y2="320" stroke-width="2"/><line x1="300" y1="40" x2="220" y2="200" stroke-dasharray="3,3"/><line x1="330" y1="40" x2="380" y2="240" stroke-dasharray="3,3"/><rect x="220" y="190" width="160" height="130" fill="#FAF9F6"/></g></svg></div>
-                            <div class="stage-text">
-                                <p class="feeling-quote">“It's about finding the right balance of light, warmth and shade for the way a home will actually be lived in.”</p>
-                                <p class="feeling-body">I think about how the sun moves across the site and how the house can respond to it — welcoming the morning light, making the most of winter warmth, while providing shade from the stronger afternoon sun when it's needed.</p>
-                                <p>Sometimes it's as simple as having a warm, sunny place to sit with a cup of tea and enjoy the view.</p>
-                            </div>
+   
+<!-- SECTION 01: DESIGNS -->
+<section id="designs" class="section-padding bg-alt">
+    <div class="container grid-editorial">
+        <div class="editorial-meta">
+            <span class="section-num">01</span>
+            <span class="section-tag">DESIGNS</span>
+        </div>
+
+        <div class="editorial-body">
+            <h2 class="editorial-heading">What does a good home feel like?</h2>
+
+            <p class="lead-text">I’ve had the privilege of working with some prominent New Zealand architects in Auckland. One thing I noticed, time and time again, was a simplicity within their work — even when the architecture itself was beautifully sophisticated. There was a balance to it. Everything seemed to influence everything else, and somehow all those individual decisions came together to create a sense of harmony.</p>
+
+            <p>I really appreciated those years of drawing their designs and being involved in turning ideas and developing them into drawings and seeing the actual buildings. I was learning by being part of the process — seeing how a drawing, a detail or a material became something real.</p>
+
+            <p>Over the years, working on my own projects, I’ve become much more conscious of the balance I’m trying to create for my clients.</p>
+
+            <p>I think about light, space and the way spaces connect with one another. I think about the aesthetics and the tactile quality of materials, as well as the character of the site and its surrounding landscape. None of these things exist in isolation.</p>
+
+            <p>When they work together, they create something more than a collection of rooms or a beautiful object. They create a feeling. And that feeling is something the people who live in the home get to experience every day.</p>
+
+            <div class="feeling-tabs-layout">
+                <div class="feeling-selector" role="tablist" aria-label="Design qualities" id="feelingSelector">
+                    <button class="feeling-btn active" role="tab" aria-selected="true" data-feeling="light">Light</button>
+                    <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="space">Space</button>
+                    <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="site">Site</button>
+                    <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="aesthetics">Aesthetics</button>
+                    <button class="feeling-btn" role="tab" aria-selected="false" data-feeling="budget">Budget</button>
+                </div>
+
+                <div class="feeling-display-stage" id="feelingStage">
+
+                    <!-- LIGHT -->
+                    <div class="feeling-card active" id="feeling-light" role="tabpanel">
+                        <div class="stage-drawing">
+                            <img src="images/light.png" alt="Natural light entering a home" class="arch-svg">
                         </div>
-                        <div class="feeling-card" id="feeling-space" role="tabpanel">
-                            <div class="stage-drawing"><svg viewBox="0 0 600 400" class="arch-svg" aria-hidden="true"><rect width="600" height="400" fill="#FFFFFF"/><g stroke="#1C1C1C" stroke-width="1.5" fill="none"><rect x="120" y="100" width="360" height="220"/><line x1="120" y1="210" x2="480" y2="210" stroke-dasharray="4,4"/><line x1="300" y1="100" x2="300" y2="320" stroke-dasharray="4,4"/><circle cx="300" cy="210" r="60"/></g></svg></div>
-                            <div class="stage-text">
-                                <p class="feeling-quote">“When you walk into a room, you can feel its size and scale almost instantly.”</p>
-                                <p class="feeling-body">I think about how each space should work, how people move between them, and how the proportions and arrangement of a home can make it feel generous without wasting space.</p>
-                                <p>It's about exploring what the better outcome might be within the space and budget available.</p>
-                            </div>
-                        </div>
-                        <div class="feeling-card" id="feeling-site" role="tabpanel">
-                            <div class="stage-drawing"><svg viewBox="0 0 600 400" class="arch-svg" aria-hidden="true"><rect width="600" height="400" fill="#FFFFFF"/><g stroke="#1C1C1C" stroke-width="1.5" fill="none"><line x1="70" y1="310" x2="530" y2="310" stroke-width="2"/><polyline points="80,260 180,230 280,250 390,190 520,220"/><polygon points="190,230 290,180 390,210 290,260"/><line x1="290" y1="180" x2="290" y2="260"/><path d="M 110 130 Q 150 90 190 130"/><path d="M 420 120 Q 470 70 520 120"/></g></svg></div>
-                            <div class="stage-text">
-                                <p class="feeling-quote">“One of the first things I do is go to the site and get a feel for it.”</p>
-                                <p class="feeling-body">Every site has its own opportunities and challenges — the sun, views, wind, privacy, landscape and the way the land meets the building.</p>
-                                <p>I also listen to what the owners have noticed from living there, because they often understand things about the site that aren't immediately obvious.</p>
-                                <p>The design grows from exploring these possibilities, while finding thoughtful ways to work with the constraints. The best designs feel as though they belong where they are.</p>
-                            </div>
-                        </div>
-                        <div class="feeling-card" id="feeling-aesthetics" role="tabpanel">
-                            <div class="stage-drawing"><svg viewBox="0 0 600 400" class="arch-svg" aria-hidden="true"><rect width="600" height="400" fill="#FFFFFF"/><g stroke="#1C1C1C" stroke-width="1.5" fill="none"><rect x="120" y="100" width="150" height="220"/><rect x="330" y="100" width="150" height="220"/><line x1="195" y1="100" x2="195" y2="320"/><line x1="405" y1="100" x2="405" y2="320"/><line x1="120" y1="260" x2="270" y2="260"/><line x1="330" y1="260" x2="480" y2="260"/></g></svg></div>
-                            <div class="stage-text">
-                                <p class="feeling-quote">“Materials can give a space a feeling before you even touch them.”</p>
-                                <p class="feeling-body">Timber brings warmth, brick feels solid and grounded, while plasterboard provides a quiet, neutral background. Flooring also changes how a room feels, both visually and underfoot.</p>
-                                <p>The balance of different textures and qualities creates a rhythm throughout a home, giving each space its own character.</p>
-                                <p>With an alteration, there is another layer to consider. Sometimes an existing home has a timeless quality worth keeping. The challenge is to add what is needed for modern living while respecting what is already there — allowing the old and new to sit comfortably together.</p>
-                            </div>
-                        </div>
-                        <div class="feeling-card" id="feeling-budget" role="tabpanel">
-                            <div class="stage-drawing"><svg viewBox="0 0 600 400" class="arch-svg" aria-hidden="true"><rect width="600" height="400" fill="#FFFFFF"/><g stroke="#1C1C1C" stroke-width="1.5" fill="none"><rect x="130" y="110" width="340" height="210"/><line x1="130" y1="180" x2="470" y2="180"/><line x1="240" y1="110" x2="240" y2="320"/><line x1="360" y1="110" x2="360" y2="320"/><circle cx="185" cy="145" r="20"/></g></svg></div>
-                            <div class="stage-text">
-                                <p class="feeling-quote">“Good design is about making sure the money is spent in the right places.”</p>
-                                <p class="feeling-body">After many years of designing, I've developed a good feel for where spending can make a real difference — and where it may not.</p>
-                                <p>Sometimes that means making the most of what already exists, avoiding unnecessary structural changes and investing in the things that matter most. Other times, it means simplifying construction while putting more thought into space, light and connection.</p>
-                                <p>The aim is to bring the budget, practical requirements and design together, so the money is working hard for the people who live there.</p>
-                            </div>
+
+                        <div class="stage-text">
+                            <p class="feeling-quote">“It's about finding the right balance of light, warmth and shade for the way a home will actually be lived in.”</p>
+                            <p class="feeling-body">I think about how the sun moves across the site and how the house can respond to it — welcoming the morning light, making the most of winter warmth, while providing shade from the stronger afternoon sun when it's needed.</p>
+                            <p>Sometimes it's as simple as having a warm, sunny place to sit with a cup of tea and enjoy the view.</p>
                         </div>
                     </div>
+
+                    <!-- SPACE -->
+                    <div class="feeling-card" id="feeling-space" role="tabpanel">
+                        <div class="stage-drawing">
+                            <img src="images/Space.png" alt="Open and thoughtfully arranged interior space" class="arch-svg">
+                        </div>
+
+                        <div class="stage-text">
+                            <p class="feeling-quote">“When you walk into a room, you can feel its size and scale almost instantly.”</p>
+                            <p class="feeling-body">I think about how each space should work, how people move between them, and how the proportions and arrangement of a home can make it feel generous without wasting space.</p>
+                            <p>It's about exploring what the better outcome might be within the space and budget available.</p>
+                        </div>
+                    </div>
+
+                    <!-- SITE -->
+                    <div class="feeling-card" id="feeling-site" role="tabpanel">
+                        <div class="stage-drawing">
+                            <img src="images/Site.png" alt="A home designed around its landscape and site" class="arch-svg">
+                        </div>
+
+                        <div class="stage-text">
+                            <p class="feeling-quote">“One of the first things I do is go to the site and get a feel for it.”</p>
+                            <p class="feeling-body">Every site has its own opportunities and challenges — the sun, views, wind, privacy, landscape and the way the land meets the building.</p>
+                            <p>I also listen to what the owners have noticed from living there, because they often understand things about the site that aren't immediately obvious.</p>
+                            <p>The design grows from exploring these possibilities, while finding thoughtful ways to work with the constraints. The best designs feel as though they belong where they are.</p>
+                        </div>
+                    </div>
+
+                    <!-- AESTHETICS -->
+                    <div class="feeling-card" id="feeling-aesthetics" role="tabpanel">
+                        <div class="stage-drawing">
+                            <img src="images/aesthetics.png" alt="Architectural materials, textures and finishes" class="arch-svg">
+                        </div>
+
+                        <div class="stage-text">
+                            <p class="feeling-quote">“Materials can give a space a feeling before you even touch them.”</p>
+                            <p class="feeling-body">Timber brings warmth, brick feels solid and grounded, while plasterboard provides a quiet, neutral background. Flooring also changes how a room feels, both visually and underfoot.</p>
+                            <p>The balance of different textures and qualities creates a rhythm throughout a home, giving each space its own character.</p>
+                            <p>With an alteration, there is another layer to consider. Sometimes an existing home has a timeless quality worth keeping. The challenge is to add what is needed for modern living while respecting what is already there — allowing the old and new to sit comfortably together.</p>
+                        </div>
+                    </div>
+
+                    <!-- BUDGET -->
+                    <div class="feeling-card" id="feeling-budget" role="tabpanel">
+                        <div class="stage-drawing">
+                            <img src="images/budget.png" alt="A thoughtfully designed home balancing quality and cost" class="arch-svg">
+                        </div>
+
+                        <div class="stage-text">
+                            <p class="feeling-quote">“Good design is about making sure the money is spent in the right places.”</p>
+                            <p class="feeling-body">After many years of designing, I've developed a good feel for where spending can make a real difference — and where it may not.</p>
+                            <p>Sometimes that means making the most of what already exists, avoiding unnecessary structural changes and investing in the things that matter most. Other times, it means simplifying construction while putting more thought into space, light and connection.</p>
+                            <p>The aim is to bring the budget, practical requirements and design together, so the money is working hard for the people who live there.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- SECTION 02: WE WORK TOGETHER -->
     <section id="together" class="section-padding">
