@@ -705,6 +705,53 @@ p {
 }
 
 
+/* --- VIEW PHOTOS CUE --- */
+.placeholder-media-box[data-gallery] {
+    cursor: zoom-in;
+}
+
+.view-photos-cue {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    z-index: 2;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #222;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+
+/* Reveal the cue when hovering or using the keyboard */
+.placeholder-media-box[data-gallery]:hover .view-photos-cue,
+.placeholder-media-box[data-gallery]:focus-visible .view-photos-cue {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Give the photo a subtle zoom effect */
+.placeholder-media-box[data-gallery] .project-image {
+    transition: transform 0.4s ease;
+}
+
+.placeholder-media-box[data-gallery]:hover .project-image {
+    transform: scale(1.035);
+}
+
+/* Keep the cue visible on touchscreens */
+@media (hover: none) {
+    .view-photos-cue {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* --- SECTION 04: BUILDERS --- */
 .builder-quote-box {
     margin-top: 2rem;
