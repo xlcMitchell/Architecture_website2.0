@@ -254,11 +254,42 @@ p {
     padding: 4rem 0 5rem 0;
 }
 
+
+.hero-headline-block {
+  margin-bottom: 24px;
+}
+
+.main-title {
+  
+    font-size: 3rem;
+    line-height: 1.15;
+    font-weight: 500;
+    font-style: normal;
+    color: #1a1a1a;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.5px;
+}
+
+.main-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555555;
+  margin: 0;
+  font-weight: 300;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  width: 60px;
+  margin: 24px 0 32px 0;
+}
+
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
 }
 
 @media (max-width: 850px) {
@@ -302,6 +333,63 @@ p {
 }
 .portrait-container:hover .portrait-img {
     filter: grayscale(20%);
+}
+
+/* Layout container for the button and note */
+.action-block {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+/* "Let's talk" Button Styling */
+.lets-talk-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.lets-talk-btn:hover {
+  background-color: #1a1a1a;
+}
+
+/* Arrow Icon inside the button */
+.btn-arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.lets-talk-btn:hover .btn-arrow {
+  transform: translateX(3px); /* Subtle slide effect on hover */
+}
+
+/* "Free initial site consultation" text styling */
+.consultation-note {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #555555;
+  font-weight: 400;
+}
+
+/* Responsive layout adjustments for mobile screens */
+@media (max-width: 600px) {
+  .action-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 }
 
 /* --- SECTION 01: FEELINGS TABS STAGE --- */

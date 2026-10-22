@@ -212,6 +212,19 @@ document.addEventListener("keydown", event => {
     }
 });
 
+document.getElementById('letsTalkBtn').addEventListener('click', function(e) {
+  e.preventDefault(); // Stop default jump behavior
+  
+  const targetSection = document.getElementById('contact'); // Matches the id="contact" at the bottom
+  
+  if (targetSection) {
+    targetSection.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+});
+
 
     // 3. CONTACT FORM SUBMISSION PLACEHOLDER
     const contactForm = document.getElementById('contact-form');
