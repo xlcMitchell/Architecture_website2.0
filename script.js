@@ -226,6 +226,7 @@ document.getElementById('letsTalkBtn').addEventListener('click', function(e) {
 });
 
 
+
     // 3. CONTACT FORM SUBMISSION PLACEHOLDER
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');

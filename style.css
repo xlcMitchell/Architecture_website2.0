@@ -1050,6 +1050,89 @@ input:focus, textarea:focus {
     color: var(--text-light-muted);
 }
 
+/* Container for both action cards */
+.contact-actions-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Individual Action Card */
+.contact-action-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white outline matching dark theme */
+  padding: 20px 24px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.contact-action-card:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05); /* Slight hover glow */
+}
+
+/* Left content layout (icon + text) */
+.action-card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Icon styling */
+.action-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  flex-shrink: 0;
+}
+
+/* Text block inside card */
+.action-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.action-subtext {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-top: 2px;
+}
+
+/* Right Arrow styling */
+.action-arrow {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.contact-action-card:hover .action-arrow {
+  transform: translateX(4px); /* Hover animation */
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 650px) {
+  .contact-actions-container {
+    grid-template-columns: 1fr; /* Stack vertically on phones */
+    gap: 12px;
+  }
+}
+
 /* --- FOOTER --- */
 .site-footer {
     padding: 2.5rem 0;
